@@ -1,0 +1,246 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+body{
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+/* header starts */
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url(../images/header1.jpeg) center/cover no-repeat fixed;
+   margin-top: auto;
+
+}
+.hero{
+    display: flex;
+    background: rgba(0,0,0,0.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;  
+}
+.hero .title{
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-button{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px black;
+}
+.hero-button:hover{
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    background: orangered;
+    transition: .8s ease;
+    box-shadow: 3px 2px 4px 6px rgba(0,0,0,0.5);
+}
+
+.header-paragragh{
+    color: whitesmoke;
+    font-size: 2vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5%;
+    /* margin-bottom: 2%; */
+    
+}
+.header-paragragh span{
+    color: rgb(250, 247, 246);font-weight: bold;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+}
+.header-paragragh span::before{
+    content: '';
+    animation: animate infinite 8s;
+}
+@keyframes animate{
+    0%{
+        content: 'Our work is your Testimony';
+    }
+    50%{
+        content: 'Communicating Languages Developing Confidence';
+        font-size: 2vh;
+        
+    }
+    100%{
+        content: 'We keep growing everyday';
+    }
+
+}
+
+
+@media all and (max-width: 952px){
+    .hero .title{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 75px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media all and (max-width: 858px){
+    .hero .title{
+        text-shadow: 2px 2px black;
+        color: white;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+}
+
+
+/* about  starts */
+.about{
+    background-color: white;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.imgbox{
+    background-image: url(../images/aboutlady.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.about .textbox{
+    font-size: 3vh;
+    background-color: white;
+
+}
+/* find us */
+.find .imgbox{
+    background-image: url(../images/find.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+
+}
+.findtextbox{
+    font-size: 3vh;
+
+}
+
+.findbox{
+    width: 80%;
+    margin: 0 auto;
+}
+.findbox h5{
+margin-bottom: 15px;
+}
+
+.findlogo{
+    font-size: 38px;
+    color: royalblue;
+}
+/* service */
+
+.service{
+
+    background-image: url(../images/services.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.serve{
+ 
+    padding: 15px;
+    margin: 10px;
+}
+
+.serve:hover{
+ 
+    padding: 15px;
+    margin: 10px;
+    transition: .8s;
+    background-color: #5D7AF9 ;
+    color: white;
+
+}
+.service-icon{
+    font-size: 50px;
+    color:#5D7AF9  ;
+}
+.service-icon:hover{
+    font-size: 50px;
+    color: white;
+}
+/* Interpretation */
+.interpretation{
+    background-image: url(../images/inter.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.review{
+    width: 100%;
+    
+    background-color: #15a491;
+
+}
+.name{
+    font-weight: bolder;
+    color: white;
+}
+
+/* Clients */
+.clients{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.clientbox{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.clients .clienttextbox{
+    font-size: 3vh;
+}
+/* Clients end */
+/* dedication */
+
+.dedication{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.dedicationbox{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.dedication .dedicationtextbox{
+    font-size: 3vh;
+}
+
+/* dedication ends */
+.subicon{
+    font-size: 30px;
+    color: green;
+}
